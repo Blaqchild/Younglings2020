@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<br>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Lwando Ngcobo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <div class="navbar">
+        <a href="follow me.html">Follow Me</a>
+        <a href="bio.html">Bio</a>
+        <a href="about.html">About</a>
+        <a href="home">Home</a>
+      </div>
+
+      </html>
+      
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Input Field in Navbar</h2>
+  <p>Navigation bar with a search box and a submit button inside of it.</p>
+</div>
+
+</body>
+</html>
+
+<h1>"Welcome Aboard"</h1>
+<br><br><br><br><br><br><br><br><br><br></br>
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+
+<!-- images with number and caption text  -->
+
+<div class="mySlides ">
+<div class="numbertext">1 / 6</div>
+<img src="calabasas1.jpg"  style="width:100%">
+
+</div>
+
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 6</div>
+<img src="longstreet.jpg" style="width:100%">
+
+</div>
+
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 6</div>
+<img src="waterfront.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 6</div>
+<img src="greenvile.JPG" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 6</div>
+<img src="golf1.jpg" style="width:100%;">
+
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">6 / 6</div>
+<img src="cbd1.jpg" style="width:100%">
+
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- Image text -->
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+
+<!-- Thumbnail images -->
+<div class="row">
+<div class="column">
+<img class="demo cursor" src="ferrari.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ferrari">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="longstreet.jpg" style="width:100%" onclick="currentslide(2)" alt="Long Street">
+
+</div>
+
+<div class="column">
+<img class="demo cursor" src="cbd.jpg" style="width:100%" onclick="currentSlide(3)" alt="CBD">
+
+</div>
+
+<div class="column">
+<img class="demor cursor" src="golf.jpg" style="width:100%" onclick="currentSlide(4)" alt="Golf">
+
+</div>
+
+<div class="column">
+<img class="demor cursor" src="greenvile.jpg" style="width:100%" onclick="currentSlide(5)" alt="Greenville">
+
+</div>
+
+<div class="column">
+<img class="demor cursor" src="waterfront.jpg" style="width:100%" onclick="currentSlide(6)" alt="Waterfront">
+</div>
+
+</div>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+</body>
+</html>

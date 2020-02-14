@@ -1,0 +1,200 @@
+body {
+background-color: black
+}
+
+/* Container for the imgage gallery */
+.container {
+max-width: 750px;
+max-height: 943px;
+}
+
+a {
+display: inline-block;
+padding: 8px;
+background-color: #dddddd;
+}
+
+h1 {
+color: white;
+text-align: center;
+padding: 10px; /* some padding */
+font-size: 60px;
+
+
+
+}
+
+}
+
+h2 {
+color: white;
+text-align:center;
+font-size: 30;
+}
+
+.follow me header {
+color: white;
+text-align: top left;
+font-size:30px ;
+padding: 10px
+}
+
+/* style the top navigation bar links */
+.navbar{
+overflow: hidden; /* Hide overflow */
+background-color: #333
+}
+
+/* style the navigation bar links */
+.navbar a {
+float: right; /* Make sure that the links stay side-by-side */
+display: block; /* Change display to block, for responsive reasons */
+color: white; /* White text color */
+font-size: medium;
+padding: 14px 20px;
+text-align: center; /* Center the text */
+text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+background-color: grey; /* Grey background color */
+color: white; /* White text color */
+
+}
+*{box-sizing: border-box}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, 
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+margin-top: -50px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+user-select: none;
+-webkit-user-select: none;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: white
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px
+width: 100%;
+text-align: center;
+
+}
+
+/* Number text (1/6) */
+.numbertext {
+color: white;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+
+}
+
+.row::after {
+content: "";
+display: table;
+clear: both;
+
+}
+
+/* Six colums side by side */
+.column {
+float: left;
+width: 16.66%;
+
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+opacity: 0.6;
+
+}
+
+.active,
+.demo:hover {
+opacity:1
+
+}
+
+
+/* Create two unequal colums that sits next to each other */
+/* Sidebar/Left colum */
+.side {
+flex: 30%; /* set the width of the sidebar */
+background-color: #f1f1; /* Grey background color */
+padding: 20px; /* Some padding */
+
+}
+
+/* Main Colum */
+.main {
+flex: 70%; /* Set teh width of the main content */
+background-color: white; /* White background color */
+padding: 20px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two colums stack on top eachother instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {
+flex-direction: column;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;  
+}
+.g-recaptcha{
+    margin: 10px 500px;
+}
+
+}
